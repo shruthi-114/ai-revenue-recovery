@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Revenue Recovery Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>AI Revenue Recovery</h1>
+    <p class="subtitle">Smart retry engine for failed payments</p>
+  </header>
+
+  <section class="stats" id="stats">
+    <div class="stat-card">
+      <div class="stat-value" id="totalFailed">₹0</div>
+      <div class="stat-label">Total Failed Amount</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value" id="recoveredAmount">₹0</div>
+      <div class="stat-label">Amount Recovered</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value" id="recoveryRate">0%</div>
+      <div class="stat-label">Recovery Rate</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value" id="txnCount">0</div>
+      <div class="stat-label">Failed Transactions</div>
+    </div>
+  </section>
+
+  <section class="actions">
+    <button id="loadBtn">Load Failed Payments</button>
+    <button id="retryBtn" disabled>Run Smart Retry</button>
+  </section>
+
+  <section>
+    <table id="txnTable">
+      <thead>
+        <tr>
+          <th>Txn ID</th>
+          <th>Customer</th>
+          <th>Amount</th>
+          <th>Failure Reason</th>
+          <th>Recovery Score</th>
+          <th>Decision</th>
+          <th>Suggested Retry Time</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+      <tbody id="txnBody">
+        <tr><td colspan="8" class="empty">Click "Load Failed Payments" to begin</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    Built for the Razorpay build challenge &mdash; Track: AI Revenue Recovery
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

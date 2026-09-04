@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  background: #0f1115;
+  color: #e8e8e8;
+  margin: 0;
+  padding: 0 24px 60px;
+}
+
+header {
+  padding: 40px 0 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.subtitle {
+  color: #9aa0a6;
+  margin-top: 6px;
+}
+
+.stats {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.stat-card {
+  background: #171a21;
+  border: 1px solid #262a33;
+  border-radius: 10px;
+  padding: 20px 28px;
+  min-width: 160px;
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 26px;
+  font-weight: 700;
+  color: #4ade80;
+}
+
+.stat-label {
+  font-size: 13px;
+  color: #9aa0a6;
+  margin-top: 6px;
+}
+
+.actions {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #374151;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #171a21;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+thead {
+  background: #1f2430;
+}
+
+th, td {
+  padding: 10px 12px;
+  text-align: left;
+  font-size: 13px;
+  border-bottom: 1px solid #262a33;
+}
+
+.empty {
+  text-align: center;
+  color: #9aa0a6;
+  padding: 30px;
+}
+
+.badge {
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.badge-retry-now { background: #14532d; color: #4ade80; }
+.badge-retry-later { background: #78350f; color: #fbbf24; }
+.badge-reminder { background: #1e3a5f; color: #60a5fa; }
+.badge-no-retry { background: #450a0a; color: #f87171; }
+
+.result-yes { color: #4ade80; font-weight: 600; }
+.result-no { color: #f87171; font-weight: 600; }
+.result-pending { color: #9aa0a6; }
+
+footer {
+  text-align: center;
+  color: #6b7280;
+  margin-top: 40px;
+  font-size: 13px;
+}
